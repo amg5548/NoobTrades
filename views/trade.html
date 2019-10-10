@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Trade</title>
+    <meta charset='UTF-8'>
+</head>
+
+<div class='dropdown'>
+    <button data-ng-click='dropDown()' class='dropbtn'>{{fname}} {{lname}} &#8595;</button>
+    <div id='myDropdown' class='dropdown-content'>
+        <a href='#!/login'>Logout</a>
+    </div>
+</div>
+<span id='cash-total'>Cash Balance: {{cashTotal | currency}}</span>
+<ul>
+    <li class='nav'><a href='#!/trade'>Trade</a></li>
+    <li data-ng-click='showPositions()' class='nav'><span>Positions</span></li>
+    <li class='nav'><a href='#!/history'>History</a></li>
+</ul>
+<div id='trade-div'>
+    <div id='form-div'>
+        <fieldset id='steps-field'>
+            <form data-ng-submit='placeOrder()'>
+                <ol>
+                    <li class='steps'><span class='uline'>Set Stock Ticker Symbol:</span><br>
+                        <input type='text' maxlength='4' data-ng-model='model' data-ng-change='makeUpperCase()'
+                            data-ng-keypress='provoked($event)' class='trade-inputs' /><input type='button'
+                            data-ng-click='setStock()' value='Set' id='set-button'>
+                        <br>
+                        <span>Symbol: <span class='disp-info'>{{symbol}}</span></span>
+                        <br>
+                        <span>Price: <span class='disp-info'>{{price | currency}}</span></span><br>
+                        <span>Update in: {{seconds}}</span>
+                    </li>
+                    <li class='steps'><span class='uline'>Set Buy/Sell:</span><br>
+                        <input type='radio' name='order' data-ng-model='selected' value='Buy'>Buy<br>
+                        <input type='radio' name='order' data-ng-model='selected' value='Sell'>Sell
+                    </li>
+                    <li class='steps'><span class='uline'>Set Number of Shares:</span><br>
+                        <input type='number' min='1' step='1' data-ng-model='qty' data-ng-change='showTotal()'
+                            class='trade-inputs' required /><br>
+                        <span>Total: <span class='disp-info'>{{total | currency | limitTo: 21}}</span></span><br>
+                        <input data-ng-disabled='disabled' type='submit' value='Submit' class='trade-inputs'
+                            id='submit-button' />
+                    </li>
+                </ol>
+            </form>
+        </fieldset>
+
+    </div>
+    <div id='cover-div'></div>
+    <div id='chart-div1'>
+        <div id='chart-div2'></div>
+        <div id='button-div'>
+            <button data-ng-disabled='disabled' data-ng-click='show1min()' class='intervals'>1m</button>
+            <button data-ng-disabled='disabled' data-ng-click='show5min()' class='intervals'>5m</button>
+            <button data-ng-disabled='disabled' data-ng-click='show15min()' class='intervals'>15m</button>
+            <button data-ng-disabled='disabled' data-ng-click='show30min()' class='intervals'>30m</button>
+            <button data-ng-disabled='disabled' data-ng-click='show60min()' class='intervals'>60m</button>
+            <button data-ng-disabled='disabled' data-ng-click='showDaily()' class='intervals'>1D</button>
+            <button data-ng-disabled='disabled' data-ng-click='showWeekly()' class='intervals'>1W</button>
+            <button data-ng-disabled='disabled' data-ng-click='showMonthly()' class='intervals'>1Mo</button>
+        </div>
+    </div>
+</div>
+
+</html>

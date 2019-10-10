@@ -1,0 +1,23 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "amg5548"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "app": "readonly",
+        "swal": "readonly",
+        "angular": "readonly",
+        "CanvasJS": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018
+    }
+}

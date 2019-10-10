@@ -1,0 +1,89 @@
+#cash-total {
+	background-color: lightgray;
+	border-color: #042F59;
+	border-radius: 10px 10px 0 0;
+	border-style: solid;
+	float: right;
+	font-family: basicImport;
+	font-size: 200%;
+	font-weight: bold;
+	left: 125px;
+	padding: 10px 10px 0 10px;
+	position: relative;
+	top: 79px;
+}
+.dropbtn {
+	background-color: #32373A;
+	border-color: #32373A;
+	border-radius: 0 0 0 10px;
+	border-style: solid;
+	color: white;
+	cursor: pointer;
+	font-family: basicImport;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 10px;
+}
+.dropdown {
+	float: right;
+	position: relative;
+}
+.dropdown a:hover {
+	background-color: black;
+	color: white;
+}
+.dropdown-content {
+	background-color: lightgray;
+	border-style: none solid solid solid;
+	border-width: thin;
+	display: none;
+	font-family: basicImport;
+	font-size: 100%;
+	font-weight: bold;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+.dropdown-content a {
+	color: black;
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+}
+.nav {
+	float: left;
+}
+.nav a {
+	color: white;
+	display: block;
+	font-family: basicImport;
+	font-size: 200%;
+	font-weight: bold;
+	padding: 20px 80px 20px 80px;
+	text-decoration: none;
+}
+.nav a:hover {
+	color: gray;
+}
+.nav span {
+	color: white;
+	display: block;
+	font-family: basicImport;
+	font-size: 200%;
+	font-weight: bold;
+	padding: 20px 80px 20px 80px;
+	text-decoration: none;
+}
+.nav span:hover {
+	color: gray;
+	cursor: pointer;
+}
+.show {
+	display: block;
+}
+ul {
+	background-color: #042F59;
+	list-style-type: none;
+	margin: 50px 0 0 0;
+	overflow: hidden;
+}

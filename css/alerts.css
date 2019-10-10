@@ -1,0 +1,19 @@
+.swal-button {
+	border-radius: 10px;
+	color: #32373A;
+}
+.swal-modal {
+	border: solid;
+	border-radius: 10px;
+}
+.swal-text {
+	font-family: basicImport;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+.swal-title {
+	font-family: basicImport;
+	font-size: 40px;
+	font-weight: bold;
+}

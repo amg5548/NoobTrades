@@ -1,0 +1,108 @@
+#button-div {
+	left: 45vw;
+	position: absolute;
+	top: 5.5vh;
+}
+#chart-div1 {
+	height: 65vh;
+	left: 22%;
+	padding: 10px;
+	position: absolute;
+	top: 3%;
+	width: 75vw;
+}
+#chart-div2 {
+	height: 100%;
+	width: 90%;
+}
+#cover-div {
+	background-color: #32373A;
+	border-radius: 10px;
+	height: 65vh;
+	left: 22%;
+	padding: 10px;
+	position: absolute;
+	top: 3%;
+	width: 68vw;
+}
+#form-div {
+	left: 1%;
+	position: absolute;
+	top: 3%;
+	width: 20vw;
+}
+#set-button {
+	background-color: white;
+	border-color: lightgray;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	font-family: basicImport;
+	font-size: 1.25vw;
+	font-weight: bold;
+	margin-left: 5px;
+	padding: 5px;
+}
+#set-button, #submit-button, .intervals {
+	cursor: pointer;
+}
+#set-button:hover, #submit-button:hover {
+	border-color: black;
+}
+#steps-field {
+	background-color: lightgray;
+	border-color: black;
+	border-radius: 10px;
+	border-style: solid;
+}
+#submit-button {
+	background-color: #93c47d;
+	border-color: lightgray;
+	margin-top: 5px;
+}
+#trade-div {
+	height: 72%;
+	position: absolute;
+	width: 100%;
+}
+.disp-info {
+	font-family: 'Helvetica';
+}
+.intervals {
+	background-color: lightgray;
+	border-color: #32373A;
+	border-radius: 10px;
+	border-style: solid;
+	font-family: basicImport;
+	font-size: .75vw;
+	font-weight: bold;
+	padding: 5px 10px 5px 10px;
+}
+.intervals:hover {
+	background-color: black;
+	border-color: black;
+	border-style: solid;
+	color: white;
+}
+.steps {
+	font-family: basicImport;
+	font-size: 1.5vw;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.trade-inputs {
+	border-radius: 10px;
+	border-style: solid;
+	font-family: basicImport;
+	font-size: 80%;
+	font-weight: bold;
+	padding: 5px;
+}
+.uline {
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+}
+input[type=radio] {
+	height: 20px;
+	width: 20px;
+}

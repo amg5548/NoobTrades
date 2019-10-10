@@ -1,0 +1,56 @@
+#corner1 {
+	border-radius: 10px 0 0 0;
+}
+#corner2 {
+	border-radius: 0 10px 0 0;
+}
+#history-div {
+	margin: 2vh 10vw 2vh 10vw;
+}
+.corner3 {
+	border-radius: 0 0 0 10px;
+}
+.corner4 {
+	border-radius: 0 0 10px 0;
+}
+.order-type {
+	border-radius: 10px;
+	display: inline;
+	padding: 5px;
+}
+.striped1 {
+	background-color: lightgray;
+}
+.striped2 {
+	background-color: white;
+}
+[id~='Buy'] {
+	background-color: #93c47d;
+}
+[id~='Sell'] {
+	background-color: #e06666;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+td {
+	font-family: basicImport;
+	font-size: 200%;
+	font-weight: bold;
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+}
+th {
+	background-color: orange;
+	color: white;
+	font-family: basicImport;
+	font-size: 200%;
+	font-weight: bold;
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+}

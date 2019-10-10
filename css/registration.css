@@ -1,0 +1,55 @@
+#reg-button {
+	background-color: #93c47d;
+	border-radius: 10px;
+	border-style: solid;
+	cursor: pointer;
+	font-family: basicImport;
+	font-size: 2vh;
+	font-weight: bold;
+	margin: 5px;
+	padding: 10px;
+	width: 50%;
+}
+#reg-button:hover {
+	border-color: black;
+}
+#reg-field {
+	background-color: lightgray;
+	border-color: black;
+	border-radius: 10px;
+	border-style: solid;
+	left: 39%;
+	position: fixed;
+	top: 18vh;
+	width: 20%;
+}
+#reg-title {
+	display: inline;
+	font-family: basicImport;
+	font-size: 4.5vh;
+	text-decoration: underline;
+	text-decoration-color: #0756a2;
+	text-decoration-skip-ink: none;
+}
+.reg-input {
+	border-color: black;
+	border-radius: 10px;
+	border-style: solid;
+	font-family: basicImport;
+	font-size: 2vh;
+	font-weight: bold;
+	margin: 5px;
+	padding: 10px;
+	width: 90%;
+}
+.reg-label {
+	font-family: basicImport;
+	font-size: 2vh;
+	font-weight: bold;
+}
+.reg-link {
+	color: black;
+	font-family: basicImport;
+	font-weight: bold;
+	padding: 10px;
+}

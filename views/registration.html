@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Registration</title>
+    <meta charset='UTF-8'>
+</head>
+
+<form data-ng-submit='register()'>
+    <fieldset id='reg-field'>
+        <h2 id='reg-title'>Register</h2>
+        <br>
+        <br>
+        <label class='reg-label'>First Name:</label>
+        <br>
+        <input class='reg-input' maxlength='35' data-ng-model='fname' type='text' placeholder='First Name' required />
+        <br>
+        <label class='reg-label'>Last Name:</label>
+        <br>
+        <input class='reg-input' maxlength='35' data-ng-model='lname' type='text' placeholder='Last Name' required />
+        <br>
+        <label class='reg-label'>Email:</label>
+        <br>
+        <input class='reg-input' maxlength='50' data-ng-model='email' type='email' placeholder='Email' required />
+        <br>
+        <label class='reg-label'>Username:</label>
+        <br>
+        <input class='reg-input' maxlength='20' data-ng-model='username' type='text' placeholder='Username' required />
+        <br>
+        <label class='reg-label'>Password:</label>
+        <br>
+        <input class='reg-input' maxlength='20' data-ng-model='password' type='password' placeholder='Password'
+            required />
+        <br>
+        <label class='reg-label'>Confirm Password:</label>
+        <br>
+        <input class='reg-input' maxlength='20' data-ng-model='confirmPassword' type='password' placeholder='Password'
+            required />
+        <br>
+        <input type='submit' value='Register' id='reg-button' />
+        <br>
+        <a href='#!/login' class='reg-link'>Back to login</a>
+    </fieldset>
+</form>
+
+</html>

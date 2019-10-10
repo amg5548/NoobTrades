@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>History</title>
+    <meta charset='UTF-8'>
+</head>
+
+<div class='dropdown'>
+    <button data-ng-click='dropDown()' class='dropbtn'>{{fname}} {{lname}} &#8595;</button>
+    <div id='myDropdown' class='dropdown-content'>
+        <a href='#!/login'>Logout</a>
+    </div>
+</div>
+<span id='cash-total'>Cash Balance: {{cashTotal | currency}}</span>
+<ul>
+    <li class='nav'><a href='#!/trade'>Trade</a></li>
+    <li data-ng-click='showPositions()' class='nav'><span>Positions</span></li>
+    <li class='nav'><a href='#!/history'>History</a></li>
+</ul>
+<div data-ng-hide='hidden' id='history-div'>
+    <table>
+        <tr>
+            <th id='corner1'>Date</th>
+            <th>Type</th>
+            <th>Symbol</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Total Price</th>
+            <th id='corner2'>Time</th>
+        </tr>
+        <tr data-ng-repeat="x in history" data-ng-class-odd="'striped1'" data-ng-class-even="'striped2'">
+            <td data-ng-class="{'corner3': $last}">{{x.date | date}}</td>
+            <td>
+                <p id='{{x.order}}' class='order-type'>{{x.order}}</p>
+            </td>
+            <td>{{x.stock}}</td>
+            <td>{{x.shares}}</td>
+            <td>{{x.pricePer | currency}}</td>
+            <td>{{x.priceTotal | currency}}</td>
+            <td data-ng-class="{'corner4': $last}">{{x.time}}</td>
+        </tr>
+    </table>
+</div>
+
+</html>

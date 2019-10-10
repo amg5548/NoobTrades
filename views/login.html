@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Login</title>
+    <meta charset='UTF-8'>
+</head>
+
+<form data-ng-submit='login()'>
+    <fieldset id='play' class='login-field'>
+        <h2 class='login-title'>Play Money Login</h2>
+        <br>
+        <br>
+        <input class='user-pass' data-ng-model='username' type='text' placeholder='Username' required />
+        <br>
+        <input class='user-pass' data-ng-model='password' type='password' placeholder='Password' required />
+        <br>
+        <a href='#!/login' class='login-link'>Forgot Password?</a>
+        <br>
+        <input type='submit' value='Login' class='login-button' />
+        <br>
+        <a href='#!/registration' class='login-link'>Don't have an account? Make one!</a>
+    </fieldset>
+</form>
+
+</html>

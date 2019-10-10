@@ -1,0 +1,25 @@
+@font-face {
+	font-family: basicImport;
+	src: url('abel-regular.ttf');
+}
+body {
+	background-color: #0756a2;
+}
+h1 {
+	background-color: orange;
+	border-color: white;
+	border-radius: 10px;
+	border-style: solid;
+	color: white;
+	display: inline;
+	font-family: basicImport;
+	font-size: 400%;
+	left: 10px;
+	padding: 10px;
+	position: relative;
+	top: 25px;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}

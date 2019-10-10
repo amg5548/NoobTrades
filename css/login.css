@@ -1,0 +1,53 @@
+#play {
+	left: 30%;
+	top: 30%;
+}
+.login-button {
+	background-color: #93c47d;
+	border-color: lightgray;
+	border-radius: 10px;
+	border-style: solid;
+	cursor: pointer;
+	font-family: basicImport;
+	font-size: 100%;
+	font-weight: bold;
+	margin: 5px;
+	padding: 10px;
+	width: 50%;
+}
+.login-button:hover {
+	border-color: black;
+}
+.login-field {
+	background-color: lightgray;
+	border-color: black;
+	border-radius: 10px;
+	border-style: solid;
+	position: fixed;
+	width: 33%;
+}
+.login-link {
+	color: black;
+	font-family: basicImport;
+	font-weight: bold;
+	padding: 10px;
+}
+.login-title {
+	display: inline;
+	font-family: basicImport;
+	font-size: 300%;
+	text-decoration: underline;
+	text-decoration-color: #0756a2;
+	text-decoration-skip-ink: none;
+}
+.user-pass {
+	border-color: black;
+	border-radius: 10px;
+	border-style: solid;
+	font-family: basicImport;
+	font-size: 100%;
+	font-weight: bold;
+	margin: 5px;
+	padding: 10px;
+	width: 90%;
+}
