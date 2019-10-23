@@ -120,8 +120,8 @@ app.controller('trade', function($scope, $http, $cookies, $interval, $window) {
 			},
 			axisX: {
 				labelFontFamily: 'Helvetica',
-				interval: 8,
-				labelMaxWidth: 65
+				labelMaxWidth: 100,
+				interval: 12
 			},
 			axisY: {
 				labelFormatter: function(e) {
@@ -173,15 +173,15 @@ app.controller('trade', function($scope, $http, $cookies, $interval, $window) {
 	}
 
 	function formatDataForIntraday(date) {
-		return CanvasJS.formatDate(date, 'H:mm (M/D)');
+		return CanvasJS.formatDate(date, 'HH:mm (MM/DD)');
 	}
 
 	function formatDataForDaily(date) {
-		return CanvasJS.formatDate(date, 'M/D');
+		return CanvasJS.formatDate(date, 'MM/DD');
 	}
 
 	function formatDataForWeekly(date) {
-		return CanvasJS.formatDate(date, 'M/D (YYYY)');
+		return CanvasJS.formatDate(date, 'MM/DD (YYYY)');
 	}
 
 	function formatDataForMonthly(date) {
