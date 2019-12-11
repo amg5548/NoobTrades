@@ -21,10 +21,10 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-force-https": "^1.0.0",
-    "mongoose": "^5.7.6"
+    "mongoose": "^5.8.0"
   },
   "devDependencies": {
-    "eslint": "^6.5.1",
-    "eslint-config-amg5548": "^1.0.3"
+    "eslint": "^6.7.2",
+    "eslint-config-amg5548": "^1.0.6"
   }
 }

@@ -1,4 +1,3 @@
-//eslint-disable-next-line padded-blocks
 app.controller('login', function($scope, $http, $cookies, $timeout, $location) {
 
 	$scope.login = async function() {

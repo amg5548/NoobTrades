@@ -1,4 +1,3 @@
-//eslint-disable-next-line padded-blocks
 app.controller('registration', function($scope, $http, $timeout, $location) {
 
 	$scope.register = async function() {

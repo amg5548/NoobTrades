@@ -1,4 +1,3 @@
-//eslint-disable-next-line padded-blocks
 app.controller('trade', function($scope, $http, $cookies, $interval, $window) {
 
 	$scope.disabled = true;

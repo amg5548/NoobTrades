@@ -1,4 +1,3 @@
-//eslint-disable-next-line padded-blocks
 app.controller('history', function($scope, $http, $cookies, $window) {
 
 	$scope.hidden = true;
